@@ -1,0 +1,21 @@
+{
+    "devtools_port": 9090,
+    "startup_app": {
+        "name": "OpenfinPOC",
+        "url": "http://localhost:8080/index.html",
+        "uuid": "OpenfinPOC",
+        "autoShow": true,
+        "autoCenter": true,
+        "saveWindowState": false
+    },
+    "runtime": {
+        "arguments": "--v=1 --remote-devtools-port=9090 --inspect",
+        "version": "stable"
+    },
+    "shortcut": {
+        "company": "OpenFin",
+        "description": "Openfin POC",
+        "icon": "http://localhost:8080/favicon.ico",
+        "name": "Openfin POC"
+    }
+}

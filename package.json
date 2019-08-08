@@ -51,6 +51,7 @@
     "redux-devtools-dock-monitor": "^1.0.1",
     "redux-devtools-log-monitor": "^1.0.2",
     "redux-devtools-slider-monitor": "^1.0.0-beta-1",
+    "redux-logger": "^3.0.6",
     "redux-slider-monitor": "^2.0.0-2",
     "style-loader": "^0.12.3",
     "webpack": "^1.9.11",
