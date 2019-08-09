@@ -5,11 +5,11 @@ This repository demonstrates how to add a Redux devtools for use in an OpenFin d
 ### Features
 - `hadouken-js-adapter`: used in this case to launch our OpenFin Application programmatically, learn more about the `js-adapter` [here](https://github.com/HadoukenIO/js-adapter)
 - `ctrl+h`: hide and show devtools,
-- ![redux devtools hide and show gif](redux-dt-gif.gif)
+> ![redux devtools hide and show gif](redux-dt-gif.gif)
 - `ctrl+m`: change monitor view,
-- ![redux devtools change monitor gif](timeline-redux-gif.gif)
+> ![redux devtools change monitor gif](timeline-redux-gif.gif)
 - `redux-logger`: logs each dispatched `action` in chrome devtools
-![logger](logger.png)
+> ![logger](logger.png)
 - `webpack`: hot module reloading (hmr), dev-server
 
 # Installation | Setup
