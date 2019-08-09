@@ -1,32 +1,20 @@
 {
   "name": "todomvc",
   "version": "0.0.0",
-  "description": "TodoMVC example for redux",
+  "description": "OpenFin TodoMVC example for redux devtools",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/reduxjs/redux-devtools.git"
+    "url": "https://github.com/adam-saland/of-react-devtools.git"
   },
-  "keywords": [
-    "react",
-    "reactjs",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack",
-    "flux",
-    "todomvc"
-  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/reduxjs/redux-devtools/issues"
+    "url": "https://github.com/adam-saland/of-redux-devtools/issues"
   },
-  "homepage": "https://github.com/reduxjs/redux-devtools#readme",
+  "homepage": "https://github.com/adam-saland/of-redux-devtools#readme",
   "dependencies": {
     "classnames": "^2.1.2",
     "hadouken-js-adapter": "^1.43.1",
