@@ -2,7 +2,7 @@
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const config = require('./webpack.config');
-const { launch } = require('hadouken-js-adapter');
+const { launch, connect } = require('hadouken-js-adapter');
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   hot: true,
@@ -14,6 +14,14 @@ new WebpackDevServer(webpack(config), {
   if (err) {
     console.log(err);
   }
-  await launch({ manifestUrl: "http://localhost:8080/app.json"})
+  const port = await launch({ manifestUrl: "http://localhost:8080/app.json" })
+  const fin = await connect({
+    uuid: 'server-connection', //Supply an addressable Id for the connection
+    address: `ws://localhost:${port}`, //Connect to the given port.
+    nonPersistent: true //We want OpenFin to exit as our application exists.
+  });
+
+  //Once OpenFin exists we shut down the server.
+  fin.once('disconnected', process.exit);
   console.log('Listening at localhost:8080');
 });
